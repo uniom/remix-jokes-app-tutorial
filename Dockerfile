@@ -9,4 +9,6 @@ WORKDIR /usr/src/app
 
 WORKDIR /usr/src/app/remix-jokes
 
+ENV FLYCTL_INSTALL /root/.fly
+ENV PATH $FLYCTL_INSTALL/bin:$PATH
 ENTRYPOINT ["npm", "run", "dev"]
